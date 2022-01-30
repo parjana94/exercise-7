@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body{
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: white;
+    width: 650px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: -180%;
+    background-position-y: 100%;
+    background-size: 500px;
+}
+
+.faq{
+    padding: 50px ;
+    width: 300px;
+}
+.faq h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.faq h2{
+    font-size: 12px;
+    color: #5d5c64;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.faq h3{
+    font-size: 10px;
+    color: #5d5c64;
+    width: 250px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+span{
+    float: right;
+    margin-right: 20px;
+}
+hr{
+    opacity: 0.5;
+}
+#black{
+    font-weight: bold;
+    color: black;
+}
+.women{
+    max-width: 300px;
+    overflow: hidden;
+    height: 100%;
+    
+}
+.img-women{
+   width: 100%;
+   transform: translate(-18%, 20%);
+}
+.box-img{
+    width: 100px;
+    transform: translate(-48%, -230%);
+}
+.faq h2:hover{
+    color: #ffcbbd;
+    transition-duration: 0.5s;
+    cursor: po;
+}
+@media only screen and (max-width: 375px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: -70%;
+        background-size: 300px;
+    }
+    .women{
+        overflow:visible;
+        height: 0px;
+    }
+    .img-women{
+        transform: translate(0%, -60%);
+    }
+    .box-img{
+        transform: translate(10%, -40%);
+    }
+    .faq h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .faq h2{
+        font-size: 15px;
+    }
+    span{
+        margin-right: 2px;
+    }
+    .faq h3{
+        font-size: 12px;
+    }
+}
